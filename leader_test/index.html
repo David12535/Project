@@ -15,12 +15,11 @@
             font-family: sans-serif;
             font-style: italic;
             #p1{
-                color: greenyellow;
+                color: rgb(157, 255, 9);
                 position: start;
             }
             #p2{
                 color: green;
-                position: start;
             }
             #p3{
                 position: start;
@@ -34,11 +33,32 @@
                 position: center;
 
             }
+            .change{
+                display: flex;
+                justify-content: space-between;
+            }
+            .third{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .second{
+                padding-bottom: 1000px;
+                padding-right: 200px;
+                gap: 7px;
+            }
+            .password{
+                width: 300px;
+                height: 35px;
+            }
             
         }
     </style>
     </head>
+
     <body>
+        <div class="change">
+        <div class="first">
         <h1>რატომ ჩემი რაზმი?</h1>
         <br>
         <br>
@@ -64,28 +84,34 @@
         <br>
         <p id="p3">იმიტომ რომ არ მე ვიპოვე ის რასაც ვერსად ვერ ვიპოვიდი, კარგი მენტორები,<br>
              მეგობრები და მთავარი ცოდნა და მუშაობის გამოცდილება</p>
+             <img src="DSC03919.JPG" width="500" >
+        </div>
+    <div class="second">
         <br>
-        <br>
-        <img src="DSC03919.JPG" width="500" >
         <br>
         <h3>Register</h3>
-        <input type="email" name="Email" id="email" placeholder="Email">
+        <input type="email" name="Email" class="password" id="email" placeholder="Email">
         <label for="email"></label>
         <br>
-        <input type="text" name="Name" id="Name" placeholder="Username">
+        <input type="text" name="Name" class="password" id="Name" placeholder="Username">
         <label for="Name"></label>
         <br>
-        <input type="password" name="Password" id="password" placeholder="password">
+        <input type="password" name="Password" class="password" id="password" placeholder="password">
         <label for="password"></label>
         <br>
-        <input type="password" name="Forgot Password" id="forgot password" placeholder="Forgot Password">
+        <input type="password" name="Forgot Password" class="password" id="forgot password" placeholder="Forgot Password">
         <label for="forgot password"></label>
         <br>    
         <input type="submit">
+    </div>
+    <div class="third">
         <br>
         <img src="photo1.jpg" width="500" id="img1" >
         <img src="photo2.jpg" width="500" id="img1" >
         <img src="photos.png" width="500" id="img1" >
         <img src="photo4.jpg" width="500" id="img1" >
+    </div>
+        
+    </div>
     </body>
 </html>
